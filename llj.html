@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h2>llj的网站</h2>
+	<script type="text/javascript">
+		window['frankUser'] = {}
+		var script = document.createElement('script')
+		script.src = 'http://llz.com/xxx.js?name=frankUser'
+		script.onload = function(){
+			console.log('加载xxx.js 成功');
+			console.log(window['frankUser'])
+		}
+		document.head.appendChild(script)
+	</script>
+</body>
+</html>
