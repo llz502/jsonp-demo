@@ -7,12 +7,19 @@
 <body>
 	<h2>llj的网站</h2>
 	<script type="text/javascript">
-		window['frankUser'] = {}
+		window['llzUser'] = {}
 		var script = document.createElement('script')
-		script.src = 'http://llz.com/xxx.js?name=frankUser'
+		script.src = 'http://llz.com/xxx.js?name=llzUser'
+		/*script下载的数据
+			window['llzUser'] = ({
+				"name":"llz",
+				"age" : 23
+			})
+		将替换window['llzUser']的值
+		*/
 		script.onload = function(){
 			console.log('加载xxx.js 成功');
-			console.log(window['frankUser'])
+			console.log(window['llzUser'])
 		}
 		document.head.appendChild(script)
 	</script>
